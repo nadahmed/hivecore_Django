@@ -1,0 +1,415 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HIVECORE</title>
+  <link rel="icon" href="{% static 'image/hivecore_icon.png' %}" type="image/png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,600&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e700c89295.js" crossorigin="anonymous"></script>
+
+ 
+
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+
+  <!--bannerbannerbannerbannerbannerbannerbannerbannerbannerbanner -->
+  <div class="container-fluid px-0">
+    <div class="jumbotron" style="background-image: url({{banner.image.url}});">
+
+      <a class="navbar-brand1" href="index.html"><img src="{{logo.image.url}}"></a>
+      <h1>{{ subtitle }}</h1>
+      <div class="header-nav container row-12">
+        <div class="link-1 col-4">
+          <a class=" " href="#"><img src="{% static 'image/1.svg' %}"></a>
+          <a class=" " href="#"><img src="{% static 'image/2.svg' %}"></a>
+        </div>
+        <div class="link-2 col-4">
+          <a class=" " href="#"><img src="{% static 'image/3.svg' %}"></a>
+          <a class=" " href="#"><img src="{% static 'image/4.svg' %}"></a>
+        </div>
+        <div class="link-3 col-4">
+          <a class="" href="#"><img src="{% static 'image/5.svg' %}"></a>
+          <a class=" " href="#"><img src="{% static 'image/6.svg' %}"></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="nav_logo"><a class="navbar-brand" href="#"><img src="{{nav_logo.image.url}}"></a></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#">HOME</a>
+          <a class="nav-item nav-link" href="#">ABOUT</a>
+          <a class="nav-item nav-link" href="#">TEAM</a>
+          <a class="nav-item nav-link" href="#">SERVICES</a>
+          <a class="nav-item nav-link" href="#">PROTFOLIO</a>
+          <a class="nav-item nav-link" href="#">BLOG</a>
+          <a class="nav-item nav-link" href="#">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- FeatureFeatureFeatureFeatureFeatureFeature -->
+
+  <div class=" container-fluid" style="background-color: #eeeeee;">
+    <div class="Feature row">
+      <div class="col">
+        <img src="{% static 'image/Group 1.svg' %}">
+        <h2>Build with love</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, beatae.</p>
+      </div>
+      <div class="col m-auto">
+        <img src="{% static 'image/Group 2.svg' %}">
+        <h2>Clean and modern</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, beatae.</p>
+      </div>
+      <div class="col">
+        <img src="{% static 'image/Group 3.svg' %}">
+        <h2>Easy to use</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, beatae.</p>
+      </div>
+      <div class="col">
+        <img src="{% static 'image/Group 4.svg' %}">
+        <h2>Fully Responsive</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, beatae.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- aboutUsaboutUsaboutUsaboutUsaboutUsaboutUsaboutUsaboutUs -->
+
+  <div class="container-fluid" style="margin-top: 50px; margin-bottom: 50px;">
+
+    <h1 style="text-align: center; padding:0 50px 50px 50px;">About Us</h1>
+
+    <div class="row">
+      <div class="col-sm" style="text-align: center;">
+        <img style="width: 50%;" src="{{about_image.image.url}}">
+      </div>
+      <div class="col-sm about_discription" style="margin: 0 100px 0 0; ">
+        <p style="width: 100%; text-align: justify; padding-top: 20px;">{{description}}</p>
+        <button style="color: white; padding: 10px; border-radius: 5px; background: #9f449b; border: none;"> Learn
+          more</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- QuoteQuoteQuoteQuoteQuoteQuoteQuoteQuoteQuoteQuoteQuote -->
+
+  <div class="Quote container-fluid gx-0 d-flex justify-content-center">
+    <div style="margin-top: 20px;"><img style="margin: 40px;" src="{% static '/image/study.png' %}">
+      <h4 style="color: white; margin: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+    </div>
+  </div>
+
+
+  <!-- team   team   team   team   team   team   team   -->
+
+  <div class="team">
+    <div class="container">
+      <h1>TEAM</h1>
+    <input type="radio" name="dot" id="one">
+    <input type="radio" name="dot" id="two">
+    <div class="main-card">
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <img src="{% static 'image/Layer 5.png' %}" alt="">
+           </div>
+           <div class="details">
+             <div class="name">Noor Al Din Ahmed</div>
+             <div class="job">CTO</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+           <img src="{% static 'image/Mugshot.png' %}" alt="">
+           </div>
+           <div class="details">
+             <div class="name">Alif Elahi</div>
+             <div class="job">Software Engineer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <img src="{% static 'image/Layer 7.png' %}" alt="">
+           </div>
+           <div class="details">
+             <div class="name">Saydur Rahman</div>
+             <div class="job">Intern Web Devloper</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <img src="{% static 'image/images.jpg' %}" alt="">
+           </div>
+           <div class="details">
+             <div class="name">Appolo Reef</div>
+             <div class="job">Web Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <img src="{% static 'image/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg' %}" alt="">
+           </div>
+           <div class="details">
+             <div class="name">Adrina Calvo</div>
+             <div class="job">UI Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+            <img src="{% static 'image/istockphoto-1040308104-612x612.jpg' %}" alt="">
+           </div>
+           <div class="details">
+             <div class="name">Nicole Lewis</div>
+             <div class="job">Web Devloper</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <label for="one" class=" active one"></label>
+      <label for="two" class="two"></label>
+    </div>
+  </div>
+</div>
+
+  <!-- Mission & VisionMission & VisionMission & VisionMission & Vision -->
+  <div style="padding: 20px;">
+    <h1 style="text-align: center; padding: 40px;">Mission & Vision</h1>
+    <div class="d-flex justify-content-center" style=" width: 100%;">
+      <p style="width: 50%; text-align: justify;">{{moto}}
+      </p>
+    </div>
+  </div>
+
+
+  <!-- massagemassagemassagemassagemassagemassagemassage -->
+
+  <div class="Quote container-fluid gx-0 d-flex justify-content-center">
+    <div style="margin-top: 20px;"><img style="margin: 40px;" src="{% static '/image/massage.png' %}">
+      <h4 style="color: white; margin: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section id="testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <!-- <h2>Client Testimonials</h2> -->
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Slide Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="carousel-content">
+                                <div class="client-img"><img src="{% static 'image/images.jpg' %}" alt="Testimonial Slider" /></div>
+                                <p><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</i></p>
+                                <h3><span>-</span> Gourav Kumar <span>-</span></h3>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <div class="client-img"><img src="{% static 'image/istockphoto-1040308104-612x612.jpg' %}" alt="Testimonial Slider" /></div>
+                                <p><i>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. There are many variations of passages of Lorem Ipsum available. Lorem Ipsum is simply dummy text of the printing and typesetting industry</i></p>
+                                <h3><span>-</span> Mukesh Kumar <span>-</span></h3>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <div class="client-img"><img src="{% static 'image/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg' %}" alt="Testimonial Slider" /></div>
+                                <p><i>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available. Lorem Ipsum is simply dummy text of the printing and typesetting industry</i></p>
+                                <h3><span>-</span> Rajnish Kumar <span>-</span></h3>
+                            </div>
+                        </div>
+                        <!-- Slider pre and next arrow -->
+                        <a class="carousel-control-prev text-white" href="#testimonialCarousel" role="button" data-slide="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a class="carousel-control-next text-white" href="#testimonialCarousel" role="button" data-slide="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End testimonials Section -->
+
+
+<!-- work work work work work work work work   -->
+<div class="work container">
+  <h2>Filter images Gallery</h2>
+
+  <ul class="filter-menu">
+      <li data-target="all">All</li>
+      <li data-target="web">Web</li>
+      <li data-target="mobile">Mobile App</li>
+      <li data-target="ui_ux">UI/UX</li>
+  </ul>
+
+  <ul class="filter-item">
+      <li data-item="web"><img src="https://res.cloudinary.com/seidensticker/image/upload/ar_1:1,c_mfit,w_900,f_auto/production/product/1227/63/1227-63-image-3-5ea8c16216339.jpg" alt=""></li>
+      <li data-item="web"><img src="https://media.boohoo.com/i/boohoo/mzz70546_white_xl?$product_image_main_mobile$" alt=""></li>
+      <li data-item="mobile"><img src="https://i.pinimg.com/originals/8e/dc/0b/8edc0b484b3c9098181f72746653f63c.jpg" alt=""></li>
+    <li data-item="mobile"><img src="https://i.pinimg.com/originals/a3/dd/2c/a3dd2c9d7028a36f89291ac308497cca.jpg" alt=""></li>
+      <li data-item="ui_ux"><img src="https://media.kasperskydaily.com/wp-content/uploads/sites/36/2020/02/11224850/smartphone-for-kids-featured.jpg" alt=""></li>
+      <li data-item="ui_ux"><img src="https://images.ctfassets.net/cnu0m8re1exe/2elnw1rJ0HL8QqPOd3OtH5/c5b25256f2f8c7ba398ef21a2ca6504d/Kid-Thinking.jpg?w=650&h=433&fit=fill" alt=""></li>
+  </ul>
+</div>
+
+
+
+  <!-- contact contactcontactcontactcontactcontactcontact -->
+
+  <div class="contact container-fluid">
+    <h1 style="text-align: center; padding: 50px;">Get in touch</h1>
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-4">
+        <div class="container-fluid" style="margin-bottom: 25px;">
+          <form action="" method="POST">
+            {% csrf_token %}
+
+            <input type="text" id="fname" name="name" placeholder="Your name..">
+
+            <input type="email" id="email" name="email" placeholder="Your email..">
+
+            <textarea class="form-control" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Send Email">
+
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <p style="text-align: justify; ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quam
+          cupiditate accusantium autem nulla eaque commodi error, inventore expedita dignissimos quae rem vel enim
+          tempore quaerat numquam quidem pariatur consectetur dolore? Expedita eum hic quasi porro nemo exercitationem
+          unde voluptatum distinctio illum ut iure provident est, harum beatae dignissimos nobis?</p>
+
+        <h5>1600 Pennsylvania Ave NW, Washington, <br>
+          DC 20500, United States of America. <br>
+
+          T: (202) 456-1111<br>
+          M: (202) 456-1212<br>
+        </h5>
+        <div style="padding-top: 8px;">
+          <i style="padding: 5px; font-size: 25px;" class="fab fa-facebook-f"></i>
+          <i style="padding: 5px; font-size: 25px;" class="fab fa-twitter"></i>
+          <i style="padding: 5px; font-size: 25px;" class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footerfooterfooterfooterfooterfooterfooterfooter -->
+  <div class="footer d-flex justify-content-center">
+    <img style="width: 150px; padding: 20px;" src="{{footer.image.url}}">
+  </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>

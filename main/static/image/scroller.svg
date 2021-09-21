@@ -1,0 +1,16 @@
+<svg id="scroller" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="48.5" viewBox="0 0 90 97">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-opacity: 0.1;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Shape_2_copy" data-name="Shape 2 copy" class="cls-1" d="M989.851,1012.15q-10.038-6.03-20.279-11.71t-10.039-17.387q0.2-11.707,0-23.417t10.039-17.387q10.24-5.679,20.279-11.708t20.079,0q10.035,6.028,20.28,11.708t10.04,17.387q-0.21,11.709,0,23.417t-10.04,17.387q-10.245,5.685-20.28,11.71T989.851,1012.15Z" transform="translate(-955 -923)"/>
+  <image id="arrow_15" data-name="arrow 15" x="30" y="43" width="30" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAMAAADaUYZlAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAclBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAABe5mfWAAAAJHRSTlMA5JYIw76Hg8pKjmmuSapQjWjHNWqK4hxLGP3fVcYw3glSzxZT7HWJAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAFJJREFUCNdNjUUCgEAMA4P74u6Q/78RWVjoIc30MIWmQ41hWrDpKHbpAT6DB0NG1xKMb0yYynvG/MyC5aupWKOhUJ626weO3x9M5Lz8GOu2y3IAEF4EXApQ1PgAAAAASUVORK5CYII="/>
+</svg>
