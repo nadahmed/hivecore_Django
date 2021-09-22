@@ -1,11 +1,34 @@
 from django.shortcuts import render
+from django.conf import settings
 from main.models import Feature, Contact, About, Mission, Subtitle, Logo, Banner, Nav_logo, Footer,Team, Team2, Clint_review
 
+from django.http import HttpResponse
+from django.core.mail import send_mail
 # Create your views here.
 
 
 
+
 def index(request):
+    if request.method=="POST":
+        contact = Contact()
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        subject = request.POST.get('subject')
+        contact.name = name
+        contact.email = email
+        contact.subject = subject
+        contact.save()
+ 
+        send_mail(
+            'from website contact',
+            subject,
+            settings.EMAIL_HOST_USER,
+            [email],
+            fail_silently=False,
+        )
+        return HttpResponse("<h1>Thanks for contact us</h1>")
+        
 
     about = About.objects.all().first()
     mission = Mission.objects.all().first()
@@ -32,16 +55,7 @@ def index(request):
     'team2':team2,
     'clint_review':clint_review,
 
-}
-
-    if request.method=="post":
-        name = request.POST['name']
-        email = request.POST['email']
-        subject = request.POST['subject']
-        values = Contact(name=name, email=email, subject=subject)
-        values.save()
-
-    
+} 
 
     return render(request, 'index.html',con)
 

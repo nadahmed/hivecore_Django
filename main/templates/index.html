@@ -281,14 +281,14 @@
     <div class="row d-flex justify-content-center">
       <div class="col-sm-4">
         <div class="container-fluid" style="margin-bottom: 25px;">
-          <form action="" method="POST">
+          <form action="" method="post" class="was-validated">
             {% csrf_token %}
 
-            <input type="text" id="fname" name="name" placeholder="Your name..">
+            <input type="text" id="fname" name="name" placeholder="Your name.." required>
 
-            <input type="email" id="email" name="email" placeholder="Your email..">
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
 
-            <textarea class="form-control" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea class="form-control" id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
 
             <input type="submit" value="Send Email">
 
