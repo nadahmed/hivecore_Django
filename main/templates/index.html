@@ -78,26 +78,15 @@
 
   <div class=" container-fluid" style="background-color: #eeeeee;">
     <div class="Feature row">
+      {% for n in  feature%}
+      
       <div class="col">
-        <img src="{% static 'image/Group 1.svg' %}">
-        <h2>Build with love</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, beatae.</p>
+        <img src="{{n.image.url}}">
+        <h2>{{n.caption}}</h2>
+        <p>{{n.details}}</p>
       </div>
-      <div class="col m-auto">
-        <img src="{% static 'image/Group 2.svg' %}">
-        <h2>Clean and modern</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, beatae.</p>
-      </div>
-      <div class="col">
-        <img src="{% static 'image/Group 3.svg' %}">
-        <h2>Easy to use</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, beatae.</p>
-      </div>
-      <div class="col">
-        <img src="{% static 'image/Group 4.svg' %}">
-        <h2>Fully Responsive</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, beatae.</p>
-      </div>
+      {% endfor %}
+
     </div>
   </div>
 
@@ -109,10 +98,10 @@
 
     <div class="row">
       <div class="col-sm" style="text-align: center;">
-        <img style="width: 50%;" src="{{about_image.image.url}}">
+        <img style="width: 50%;" src="{{about.image.url}}">
       </div>
       <div class="col-sm about_discription" style="margin: 0 100px 0 0; ">
-        <p style="width: 100%; text-align: justify; padding-top: 20px;">{{description}}</p>
+        <p style="width: 100%; text-align: justify; padding-top: 20px;">{{about.description}}</p>
         <button style="color: white; padding: 10px; border-radius: 5px; background: #9f449b; border: none;"> Learn
           more</button>
       </div>
@@ -137,111 +126,50 @@
     <input type="radio" name="dot" id="one">
     <input type="radio" name="dot" id="two">
     <div class="main-card">
-      <div class="cards">
+      
+      <div class="cards"> 
+        {% for t in  team%} 
         <div class="card">
          <div class="content">
            <div class="img">
-            <img src="{% static 'image/Layer 5.png' %}" alt="">
+            <img src="{{t.image.url}}" alt="">
            </div>
            <div class="details">
-             <div class="name">Noor Al Din Ahmed</div>
-             <div class="job">CTO</div>
+             <div class="name">{{t.name}}</div>
+             <div class="job">{{t.designation}}</div>
            </div>
            <div class="media-icons">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
+             <a href="{{t.facebook}}"><i class="fab fa-facebook-f"></i></a>
+             <a href="{{t.twitter}}"><i class="fab fa-twitter"></i></a>
+             <a href="{{t.social3}}"><i class="fab fa-instagram"></i></a>
+             <a href="{{t.social4}}"><i class="fab fa-youtube"></i></a>
            </div>
          </div>
         </div>
-        <div class="card">
-         <div class="content">
-           <div class="img">
-           <img src="{% static 'image/Mugshot.png' %}" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Alif Elahi</div>
-             <div class="job">Software Engineer</div>
-           </div>
-           <div class="media-icons">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
-           </div>
-         </div>
-        </div>
-        <div class="card">
-         <div class="content">
-           <div class="img">
-            <img src="{% static 'image/Layer 7.png' %}" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Saydur Rahman</div>
-             <div class="job">Intern Web Devloper</div>
-           </div>
-           <div class="media-icons">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
-           </div>
-         </div>
-        </div>
+        {% endfor %}
       </div>
+      
+
       <div class="cards">
+        {% for t2 in  team2%} 
         <div class="card">
          <div class="content">
            <div class="img">
-            <img src="{% static 'image/images.jpg' %}" alt="">
+            <img src="{{t2.image.url}}" alt="">
            </div>
            <div class="details">
-             <div class="name">Appolo Reef</div>
-             <div class="job">Web Designer</div>
+             <div class="name">{{t2.name}}</div>
+             <div class="job">{{t2.designation}}</div>
            </div>
            <div class="media-icons">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
+             <a href="{{t2.facebook}}"><i class="fab fa-facebook-f"></i></a>
+             <a href="{{t2.twitter}}"><i class="fab fa-twitter"></i></a>
+             <a href="{{t2.social3}}"><i class="fab fa-instagram"></i></a>
+             <a href="{{t2.social4}}"><i class="fab fa-youtube"></i></a>
            </div>
          </div>
-        </div>
-        <div class="card">
-         <div class="content">
-           <div class="img">
-            <img src="{% static 'image/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg' %}" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Adrina Calvo</div>
-             <div class="job">UI Designer</div>
-           </div>
-           <div class="media-icons">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
-           </div>
-         </div>
-        </div>
-        <div class="card">
-         <div class="content">
-           <div class="img">
-            <img src="{% static 'image/istockphoto-1040308104-612x612.jpg' %}" alt="">
-           </div>
-           <div class="details">
-             <div class="name">Nicole Lewis</div>
-             <div class="job">Web Devloper</div>
-           </div>
-           <div class="media-icons">
-             <a href="#"><i class="fab fa-facebook-f"></i></a>
-             <a href="#"><i class="fab fa-twitter"></i></a>
-             <a href="#"><i class="fab fa-instagram"></i></a>
-             <a href="#"><i class="fab fa-youtube"></i></a>
-           </div>
-         </div>
-        </div>
+        </div>  
+        {% endfor %}
       </div>
     </div>
     <div class="button">
@@ -287,30 +215,25 @@
                         <li data-target="#testimonialCarousel" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner" role="listbox">
+
+                      {% for r in  clint_review%}
                         <!-- Slide 1 -->
-                        <div class="carousel-item active">
+                        
+                        <div class="carousel-item {% if forloop.first%}active{%endif%}">
+                          
                             <div class="carousel-content">
-                                <div class="client-img"><img src="{% static 'image/images.jpg' %}" alt="Testimonial Slider" /></div>
-                                <p><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</i></p>
-                                <h3><span>-</span> Gourav Kumar <span>-</span></h3>
+                              
+                              <div>  
+                              <div class="client-img"><img src="{{r.clint_pic.url}}" alt="Testimonial Slider" /></div>
+                                <p><i>{{r.comment}}</i></p>
+                                <h3><span>-</span>{{r.name}}<span>-</span></h3>
+                              </div>
+                                
                             </div>
+                            
                         </div>
-                        <!-- Slide 2 -->
-                        <div class="carousel-item">
-                            <div class="carousel-content">
-                                <div class="client-img"><img src="{% static 'image/istockphoto-1040308104-612x612.jpg' %}" alt="Testimonial Slider" /></div>
-                                <p><i>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. There are many variations of passages of Lorem Ipsum available. Lorem Ipsum is simply dummy text of the printing and typesetting industry</i></p>
-                                <h3><span>-</span> Mukesh Kumar <span>-</span></h3>
-                            </div>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="carousel-item">
-                            <div class="carousel-content">
-                                <div class="client-img"><img src="{% static 'image/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg' %}" alt="Testimonial Slider" /></div>
-                                <p><i>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available. Lorem Ipsum is simply dummy text of the printing and typesetting industry</i></p>
-                                <h3><span>-</span> Rajnish Kumar <span>-</span></h3>
-                            </div>
-                        </div>
+                        {% endfor %}
+                        
                         <!-- Slider pre and next arrow -->
                         <a class="carousel-control-prev text-white" href="#testimonialCarousel" role="button" data-slide="prev">
                             <i class="fas fa-chevron-left"></i>
@@ -328,7 +251,7 @@
 
 
 <!-- work work work work work work work work   -->
-<div class="work container">
+<!-- <div class="work container">
   <h2>Filter images Gallery</h2>
 
   <ul class="filter-menu">
@@ -346,7 +269,7 @@
       <li data-item="ui_ux"><img src="https://media.kasperskydaily.com/wp-content/uploads/sites/36/2020/02/11224850/smartphone-for-kids-featured.jpg" alt=""></li>
       <li data-item="ui_ux"><img src="https://images.ctfassets.net/cnu0m8re1exe/2elnw1rJ0HL8QqPOd3OtH5/c5b25256f2f8c7ba398ef21a2ca6504d/Kid-Thinking.jpg?w=650&h=433&fit=fill" alt=""></li>
   </ul>
-</div>
+</div> -->
 
 
 
