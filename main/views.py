@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.conf import settings
-from main.models import Feature, Contact, About, Mission, Subtitle, Logo, Banner, Nav_logo, Footer,Team, Team2, Clint_review
+from main.models import Feature, Contact, About, Mission, Subtitle, Logo, Banner, Nav_logo, Footer,Team, Team2, Clint_review, Address
 
 from django.http import HttpResponse
 from django.core.mail import send_mail
@@ -37,10 +37,12 @@ def index(request):
     banner = Banner.objects.all().first()
     nav_logo = Nav_logo.objects.all().first()
     footer = Footer.objects.all().first()
-    feature = Feature.objects.all()
+    feature = Feature.objects.all()[:4]
     team = Team.objects.all()
     team2 = Team2.objects.all()
     clint_review = Clint_review.objects.all()
+
+    address = Address.objects.all().last()
 
     con = {
     'subtitle': subtitle.subtitle,
@@ -54,6 +56,7 @@ def index(request):
     'team':team,
     'team2':team2,
     'clint_review':clint_review,
+    'address': address,
 
 } 
 

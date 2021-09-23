@@ -296,21 +296,19 @@
         </div>
       </div>
       <div class="col-sm-4">
-        <p style="text-align: justify; ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quam
-          cupiditate accusantium autem nulla eaque commodi error, inventore expedita dignissimos quae rem vel enim
-          tempore quaerat numquam quidem pariatur consectetur dolore? Expedita eum hic quasi porro nemo exercitationem
-          unde voluptatum distinctio illum ut iure provident est, harum beatae dignissimos nobis?</p>
+        <p style="text-align: justify; ">{{address.details}}</p>
 
-        <h5>1600 Pennsylvania Ave NW, Washington, <br>
-          DC 20500, United States of America. <br>
+        <h5>{{address.address1}}, <br>
+          {{address.address2}} <br>
 
-          T: (202) 456-1111<br>
-          M: (202) 456-1212<br>
+          T: {{address.phNumber1}}<br>
+          M: {{address.phNumber2}}<br>
         </h5>
         <div style="padding-top: 8px;">
-          <i style="padding: 5px; font-size: 25px;" class="fab fa-facebook-f"></i>
-          <i style="padding: 5px; font-size: 25px;" class="fab fa-twitter"></i>
-          <i style="padding: 5px; font-size: 25px;" class="fab fa-instagram"></i>
+           <a href="{{address.facebook}}"><i style="padding: 5px; font-size: 25px;" class="fab fa-facebook-f"></i></a>
+           <a href="{{address.twitter}}"><i style="padding: 5px; font-size: 25px;" class="fab fa-twitter"></i></a>
+           <a href="{{address.social3}}">
+          <i style="padding: 5px; font-size: 25px;" class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>

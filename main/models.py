@@ -73,3 +73,17 @@ class Feature(models.Model):
     image = models.ImageField(upload_to = 'imag/%y')
     def __str__(self):
         return self.caption
+
+class Address(models.Model):
+    caption = models.CharField(max_length=50, null=True, blank=True)
+    details = models.TextField(max_length=1000, null=True, blank=True)
+    address1 = models.TextField(max_length=200, null=True, blank=True)
+    address2 = models.TextField(max_length=200, null=True, blank=True)
+    phNumber1 = models.TextField(max_length=100, null=True, blank=True)
+    phNumber2 = models.TextField(max_length=100, null=True, blank=True)
+    facebook = models.TextField(max_length=50, null=True, blank=True)
+    twitter = models.TextField(max_length=50, null=True, blank=True)
+    social3 = models.TextField(max_length=50, null=True, blank=True)
+    social4 = models.TextField(max_length=50, null=True, blank=True)
+    def __str__(self):
+        return self.caption
