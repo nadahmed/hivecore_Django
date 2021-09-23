@@ -3,7 +3,7 @@ from django.conf import settings
 from main.models import Feature, Contact, About, Mission, Subtitle, Logo, Banner, Nav_logo, Footer,Team, Team2, Clint_review, Address
 
 from django.http import HttpResponse
-from django.core.mail import send_mail
+from django.core.mail import EmailMessage
 # Create your views here.
 
 
@@ -20,13 +20,15 @@ def index(request):
         contact.subject = subject
         contact.save()
  
-        send_mail(
-            'from website contact',
-            subject,
-            settings.EMAIL_HOST_USER,
-            [email],
-            fail_silently=False,
+        email1 = EmailMessage(
+            subject= 'from website contact',
+            body= subject,
+            to=('saydur776@gmail.com',),
+            from_email = settings.EMAIL_HOST_USER,
+            reply_to=[email],
         )
+
+        email1.send()
         return HttpResponse("<h1>Thanks for contact us</h1>")
         
 
